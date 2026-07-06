@@ -1,68 +1,44 @@
-// ===================================
-// 鯖主サバイバル
-// script.js
-// ===================================
-
-// 初期ステータス
-let mental = 15;
-let trust = 15;
-let serverType = "";
-
-// 質問数
-const maxQuestions = 7;
-
-// ランダムに選ばれた質問
-let selectedQuestions = [];
-
-
-// ===================================
-// 初期化
-// ===================================
-
-init();
-
-
-// ===================================
-// 初期化
-// ===================================
-
-function init() {
-
-    loadQuestions();
-
-}
-
-
-// ===================================
-// 質問を読み込む
-// ===================================
-
-function loadQuestions() {
-
-    selectedQuestions = shuffle([...questions]).slice(0, maxQuestions);
-
-    showQuestions();
-
-}
-
-
-// ===================================
-// 質問表示
-// ===================================
-
 function showQuestions() {
 
-    console.log(selectedQuestions);
+    const questionArea = document.getElementById("questionArea");
 
-}
+    questionArea.innerHTML = "";
 
+    selectedQuestions.forEach((question, index) => {
 
-// ===================================
-// 配列をシャッフル
-// ===================================
+        questionArea.innerHTML += `
 
-function shuffle(array) {
+        <div class="questionBox">
 
-    return array.sort(() => Math.random() - 0.5);
+            <p><strong>Q${index + 1}</strong></p>
+
+            <p>${question.text}</p>
+
+            <label>
+                <input type="radio" name="q${question.id}" value="yes">
+                はい
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="q${question.id}" value="neutral">
+                どちらともいえない
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="q${question.id}" value="no">
+                いいえ
+            </label>
+
+        </div>
+
+        <br>
+
+        `;
+
+    });
 
 }

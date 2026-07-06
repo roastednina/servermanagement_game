@@ -17,57 +17,109 @@
 
 <div class="game">
 
-    <h1>🛡️ あなたはどんな鯖主？</h1>
+    <h1>🛡 あなたはどんな鯖主？</h1>
 
     <p class="subtitle">
 
         ゲーム開始前に、あなたの運営スタイルを診断します。<br>
         正解・不正解はありません。<br>
-        あなたならどうするか、素直な気持ちで答えてください。
+        思った通りに答えてください。
 
     </p>
 
-    <!-- 質問表示エリア -->
+    <!-- ========================= -->
+    <!-- 質問エリア -->
+    <!-- ========================= -->
 
     <div id="questionArea">
 
-        <!-- questions.jsから自動表示 -->
-
     </div>
 
     <br>
 
-    <h2>🌟 あなたの長所（3つまで選択）</h2>
+    <!-- ========================= -->
+    <!-- 長所 -->
+    <!-- ========================= -->
+
+    <h2>🌟 長所（3つ選んでください）</h2>
 
     <div id="strengthArea">
 
-        <!-- questions.jsから自動表示 -->
-
     </div>
 
     <br>
 
-    <h2>⚠️ あなたの短所（3つまで選択）</h2>
+    <!-- ========================= -->
+    <!-- 短所 -->
+    <!-- ========================= -->
+
+    <h2>⚠️ 短所（3つ選んでください）</h2>
 
     <div id="weaknessArea">
-
-        <!-- questions.jsから自動表示 -->
 
     </div>
 
     <br><br>
 
-    <div style="text-align:center;">
+    <!-- ========================= -->
+    <!-- 診断ボタン -->
+    <!-- ========================= -->
 
-        <button id="startGame">
+    <div id="diagnosisButtonArea">
 
-            🎮 鯖主サバイバルを始める
+        <button id="diagnosisButton">
+
+            📊 診断する
+
+        </button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 診断結果 -->
+    <!-- ========================= -->
+
+    <div id="resultArea" style="display:none;">
+
+        <hr>
+
+        <h2>📊 診断結果</h2>
+
+        <h3 id="serverType">
+
+            鯖主タイプ
+
+        </h3>
+
+        <p>
+
+            ❤️ メンタル
+
+            <strong id="mentalResult">15</strong>
+
+        </p>
+
+        <p>
+
+            🤝 メンバーからの信頼
+
+            <strong id="trustResult">15</strong>
+
+        </p>
+
+        <br>
+
+        <button id="startGameButton">
+
+            🎮 GAME START
 
         </button>
 
     </div>
 
 </div>
+
 
 <script src="data/questions.js"></script>
 

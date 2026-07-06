@@ -1,19 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>鯖主サバイバル</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- ここにゲーム画面 -->
+<div class="game">
 
-    <script src="data/questions.js"></script>
-    <script src="data/events.js"></script>
-    <script src="script.js"></script>
+    <h1>🎮 鯖主サバイバル</h1>
+
+    <p class="subtitle">
+        あなたは雑談サーバーの管理人です。<br>
+        メンタルとトラストを守りながら、
+        コミュニティを育てましょう。
+    </p>
+
+    <div class="status">
+
+        <div class="box">
+            ❤️<br>
+            <span id="mental">10</span><br>
+            メンタル
+        </div>
+
+        <div class="box">
+            🤝<br>
+            <span id="trust">10</span><br>
+            トラスト
+        </div>
+
+        <div class="box">
+            👥<br>
+            <span id="members">30</span><br>
+            メンバー
+        </div>
+
+        <div class="box">
+            📅<br>
+            <span id="day">1</span><br>
+            Day
+        </div>
+
+    </div>
+
+    <div class="event">
+
+        <h2 id="eventTitle">📨 Member OからDM</h2>
+
+        <p id="eventText">
+            「少し相談があります。<br><br>
+
+            最近、Member Kさんが私の話を何度も遮るので、
+            通話に入りづらく感じています。」
+        </p>
+
+    </div>
+
+    <div class="choices">
+
+        <button id="choice1">
+            A　当事者に事情を聞く
+        </button>
+
+        <button id="choice2">
+            B　他メンバーから情報を集める
+        </button>
+
+        <button id="choice3">
+            C　しばらく様子を見る
+        </button>
+
+    </div>
+
+    <div class="result">
+
+        <h3>結果</h3>
+
+        <p id="resultText">
+            ここに結果が表示されます。
+        </p>
+
+    </div>
+
+</div>
+
+<script src="data/questions.js"></script>
+
+<script src="data/events.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 

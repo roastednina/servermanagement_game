@@ -2,86 +2,72 @@ const questions = [
 
     {
         id: 1,
-        text: "新しいメンバーが入ってきたら、自分から声をかける。"
+        category: "trust",
+        reverse: false,
+        text: "新しいメンバーが入ってきたら、自分から声をかけることが多い。"
     },
 
     {
         id: 2,
-        text: "トラブルが起きたら、早めに対応したい。"
+        category: "trust",
+        reverse: false,
+        text: "会話が止まったら、自分から話題を出す方だ。"
     },
 
     {
         id: 3,
-        text: "誰かが困っていたら放っておけない。"
+        category: "trust",
+        reverse: false,
+        text: "新しいメンバーが輪に入りやすいよう気を配る。"
     },
 
     {
         id: 4,
-        text: "ルールはきちんと守ってほしいと思う。"
+        category: "trust",
+        reverse: false,
+        text: "メンバー全員に公平に接するよう心掛けている。"
     },
 
     {
         id: 5,
-        text: "会話が止まったら、自分から話題を出す。"
+        category: "trust",
+        reverse: false,
+        text: "困っている人がいたら相談に乗ることが多い。"
     },
 
     {
         id: 6,
-        text: "人の相談を聞くことが多い。"
-    },
-
-    {
-        id: 7,
+        category: "mental",
+        reverse: false,
         text: "嫌われても必要なら注意できる。"
     },
 
     {
+        id: 7,
+        category: "mental",
+        reverse: false,
+        text: "トラブルが起きても冷静に対応できる方だ。"
+    },
+
+    {
         id: 8,
+        category: "mental",
+        reverse: true,
         text: "一人で抱え込んでしまうことがある。"
     },
 
     {
         id: 9,
-        text: "メンバー全員に公平でいたい。"
+        category: "mental",
+        reverse: true,
+        text: "他人の言葉を気にしすぎてしまう。"
     },
 
     {
         id: 10,
-        text: "決断は早い方だ。"
+        category: "mental",
+        reverse: false,
+        text: "プレッシャーがかかっても落ち着いて判断できる。"
     }
-
-];
-
-const strengths = [
-
-    "共感力",
-    "冷静",
-    "公平",
-    "決断力",
-    "行動力",
-    "観察力",
-    "話題づくり",
-    "柔軟性",
-    "責任感",
-    "育成力",
-    "親しみやすさ",
-    "Discord知識"
-
-];
-
-const weaknesses = [
-
-    "抱え込みやすい",
-    "優柔不断",
-    "心配性",
-    "感情的",
-    "疲れやすい",
-    "お人好し",
-    "完璧主義",
-    "面倒事を避ける",
-    "慎重すぎる",
-    "人を信じすぎる",
-    "せっかち",
-    "空気を読みすぎる"
 
 ];
